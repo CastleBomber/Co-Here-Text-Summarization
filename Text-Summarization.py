@@ -2,7 +2,7 @@
 """
 **************************************************************
     Project: Co:here Newspaper Natural Language Processing
-    Author: [CastleBomber]
+    Authors: [CastleBomber + Team]
     Date:   [15 OCT 2022]
 
     Notes:
@@ -34,7 +34,8 @@ def main():
         max_tokens=30,
         temperature=0.5)
 
-    #print(article_name.text)
+    print("CNN full text: " + article_name.text)
+    print("\n===================\n")
     print('CNN summary: {}'.format(response.generations[0].text))
 
 main()
